@@ -1,7 +1,5 @@
 package FlightReservationSystem;
 
-//ENCAPSULATED AS SAID IN CHECKPOINT 3
-
 public class Flight {
     private String flightNumber;
     private String airLine;
@@ -38,9 +36,9 @@ public class Flight {
     public boolean checkAvailability() {
         if(getBookedSeats()>=capacity) {
             System.out.println("Seats are full");
+            System.exit(capacity);
             return false;}
         else {
-            System.out.println("Seats are booked");
             return true;}
     }
     public void incrementBookingCounter() {

@@ -1,10 +1,9 @@
 package FlightReservationSystem;
 
-///ENCAPSULATED AS SAID IN CHECKPOINT 3
 public class Passenger {
     private int id;
     private static int idCounter;
-    private Address address;  ////CREATED AS SAID IN CHECKPOINT 3
+    private Address address;
     public Passenger(int id,String name, String phone, String email, String contactDetails,String street, String city, String state, String addressDetail) {
         this(id);
         Contact contact= new Contact(name,phone,email,contactDetails);
@@ -25,8 +24,6 @@ public class Passenger {
         this.address = address;
     }
 
-
-    //CREATED getPassengerCount AS SAID IN CHECKPOINT 3
     public int getPassengerCount(){
         return idCounter;
     }
@@ -41,7 +38,7 @@ public class Passenger {
         this.address = address;
         this.contact = contact;
     }
-    private Contact contact;        //NESTED CONTACT CLASS AS SAID IN CHECKPOINT 3
+    private Contact contact;
 
     public void setContact(Contact contact) {
         this.contact = contact;
@@ -101,7 +98,7 @@ public class Passenger {
             this.contactDetails=contactDetails;
         }
     }
-    private static class Address {          //NESTED ADDRESS CLASS AS SAID IN CHECKPOINT 3
+    private static class Address {
         private String street;
         private String city;
         private String state;

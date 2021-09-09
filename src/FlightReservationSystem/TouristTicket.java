@@ -1,11 +1,18 @@
 package FlightReservationSystem;
 
-//ENCAPSULATED AS SAID IN CHECKPOINT 3
+/* AS SAID IN CHECKPOINT4 */
 
-public class TouristTicket {
+public class TouristTicket extends Ticket {
     private String hotelAddress;
-    private String[] selectedTouristLocation;
 
+    // ALL REQUIRED ATTRIBUTES AND METHODS MOVED AS SAID IN CHECKPOINT 4
+    // CONSTRUCTOR ALSO PROVIDED AS SAID IN CHECKPOINT 4
+    public TouristTicket(String pnr, String from, String to, Flight flight, String departureDateTime,
+                         String arrivalDateTime, Passenger passenger, String seatno, float price, boolean cancelled,String hotelAddress,String[] selectedTouristLocation) {
+        super(pnr, from, to, flight, departureDateTime, arrivalDateTime, passenger, seatno, price, cancelled);
+        this.selectedTouristLocation = selectedTouristLocation;
+        this.hotelAddress = hotelAddress;
+    }
     public String[] getSelectedTouristLocation() {
         return selectedTouristLocation;
     }
@@ -15,9 +22,10 @@ public class TouristTicket {
     public void setHotelAddress(String hotelAddress) {
         this.hotelAddress = hotelAddress;
     }
+    private String[] selectedTouristLocation;
     private String touristLocation;
 
-    private String getHotelAddress() {
+    String getHotelAddress() {
         return this.hotelAddress;
     }
     public String[] getTouristLocation() {
