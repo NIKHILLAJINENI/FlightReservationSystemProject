@@ -1,7 +1,5 @@
 package FlightReservationSystem;
 
-//MADE ABSTRACT AS SAID IN CHECKPOINT4
-
 public abstract class Ticket {
     private String pnr;
     private String from;

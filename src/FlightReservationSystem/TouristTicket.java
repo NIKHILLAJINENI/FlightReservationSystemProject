@@ -1,12 +1,7 @@
 package FlightReservationSystem;
 
-/* AS SAID IN CHECKPOINT4 */
-
 public class TouristTicket extends Ticket {
     private String hotelAddress;
-
-    // ALL REQUIRED ATTRIBUTES AND METHODS MOVED AS SAID IN CHECKPOINT 4
-    // CONSTRUCTOR ALSO PROVIDED AS SAID IN CHECKPOINT 4
     public TouristTicket(String pnr, String from, String to, Flight flight, String departureDateTime,
                          String arrivalDateTime, Passenger passenger, String seatno, float price, boolean cancelled,String hotelAddress,String[] selectedTouristLocation) {
         super(pnr, from, to, flight, departureDateTime, arrivalDateTime, passenger, seatno, price, cancelled);

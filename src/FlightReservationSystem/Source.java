@@ -25,9 +25,10 @@ public class Source {
         System.out.println(regularTicket.getDepartureDateTime());
         System.out.println(regularTicket.getSpecialServices());
         System.out.println(touristTicket.getHotelAddress());
-
-
     }
-
+    //created and printed required objects as asked in checkpoint 5
+    public static void printTicketDetails(Ticket ticket) {
+        System.out.println(ticket.getPnr());
+    }
 
 }
